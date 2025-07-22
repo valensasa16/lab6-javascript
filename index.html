@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raj's Robot Rentals - Interactive Quote Generator</title>
+        <!-- style sheets -->
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <!-- web fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header class="flex">
+            <img src="images/robot.jpg" alt="photo of a white plastic robot with
+                a black background">
+            <div class="header-text">
+                <h1>Raj's Robot Rentals</h1>
+                <p class="tagline">Your Premium Robot Rental Service</p>
+            </div>
+        </header>
+        
+        <main>
+            <section class="quote-section">
+                <h2>Interactive Quote Generator</h2>
+                <p class="intro-text">We have 2 premium models available for booking:</p>
+                
+                <div class="models-info">
+                    <div class="model-card" id="xyz-card">
+                        <h3>Model XYZ</h3>
+                        <p class="price">$100 per day</p>
+                        <p class="description">Perfect for light tasks and entertainment</p>
+                    </div>
+                    <div class="model-card" id="cprg-card">
+                        <h3>Model CPRG</h3>
+                        <p class="price">$213 per day</p>
+                        <p class="description">Advanced model for complex operations</p>
+                    </div>
+                </div>
+
+                <div class="quote-display">
+                    <p class="quote-text">
+                        The cost to book <span id="model-text" class="highlight">Model XYZ</span> 
+                        for <span id="duration-text" class="highlight">1</span> 
+                        <span id="days-text">day</span> is 
+                        <span id="calculated-cost" class="price-highlight">$100.00</span>.
+                    </p>
+                </div>
+                
+                <div class="controls flex">
+                    <button id="model-button" class="control-btn model-btn" aria-label="Switch between robot models">
+                        Switch Model
+                    </button>
+                    <button id="duration-button" class="control-btn duration-btn" aria-label="Change rental duration">
+                        Change Duration
+                    </button>
+                    <button id="reset-button" class="control-btn reset-btn" aria-label="Reset to default values">
+                        Reset Quote
+                    </button>
+                </div>
+
+                <div class="additional-info">
+                    <h3>Rental Information</h3>
+                    <ul class="info-list">
+                        <li>Free delivery within city limits</li>
+                        <li>24/7 technical support included</li>
+                        <li>Flexible rental periods (minimum 1 day)</li>
+                        <li>Insurance coverage available</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h3>Ready to Book?</h3>
+                <p>Thank you for your interest in booking a 'bot! Contact us today to reserve your robot.</p>
+                <div class="contact-info">
+                    <p><strong>Phone:</strong> (555) 123-ROBOT</p>
+                    <p><strong>Email:</strong> bookings@rajsrobots.com</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <p class="copyright">&copy; 2024 Raj's Robot Rentals. All rights reserved.</p>
+                <p class="photo-credit">
+                    Photo by <a
+                        href="https://unsplash.com/@possessedphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Possessed
+                        Photography</a> on <a
+                        href="https://unsplash.com/s/photos/robot-face?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </p>
+            </div>
+        </footer>
+        
+        <!-- Javascript -->
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>
